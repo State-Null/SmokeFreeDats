@@ -78,8 +78,3 @@ Silences heavy rotating alpha-transparent particle glows on interactive objects 
 | Object | DAT Path | What Was Silenced |
 |---|---|---|
 | **Home Point Crystal** | `ROM/3/25.DAT` | Rotating crystal particle aura |
-
----
-
-## 🛠️ Tools
-* [`tools/strip_particles.py`](tools/strip_particles.py): Standalone Python script to inspect and cleanly excise particle emitter containers from FFXI zone DATs.
