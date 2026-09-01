@@ -17,7 +17,7 @@ A high-performance DAT overlay pack for **[XIPivot](https://github.com/Darkdoom/
 
 To make it permanent, add `SmokeFreeDats` to `Windower4/addons/XIPivot/data/settings.xml`:
 ```xml
-<overlays>SmokeFreeDats,XI-View,nohpglow</overlays>
+<overlays>SmokeFreeDats,XI-View</overlays>
 ```
 
 ---
