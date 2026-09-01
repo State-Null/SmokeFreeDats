@@ -1,55 +1,71 @@
-# 💨 SmokeFreeDats Performance Pack
+# 💨 SmokeFreeDats & Performance Pack
 
-A plug-and-play, zero-lag performance DAT collection for Final Fantasy XI via **[XIPivot](https://github.com/Darkdoom/XIPivot)**.
+A modular, zero-lag performance DAT collection for Final Fantasy XI via **[XIPivot](https://github.com/Darkdoom/XIPivot)**.
 
-It eliminates lag-heavy transparent particle effects across:
-1. 🌆 **City & Port Smoke**: 9 major town hubs (chimneys, blast furnaces, boilers, smog).
-2. 🔮 **Battle Summons & Fetters**: All **8 Elemental Crystal Fetters & Wave 3 Halos** (Sortie, Odyssey, Dynamis-D, Lilith, Provenance).
-3. 💠 **Home Point Crystals**: Silences rotating crystal particle auras.
+This repository is organized into two independent packs:
+1. 🌆 **`zones`**: Town & port smoke and mist removal across **11 major cities and hubs** using native engine Auto-Run emitter toggles.
+2. 🔮 **`objects`**: Particle glow removal for all **8 Elemental Crystal Fetters & Gyres** and **Home Point Crystals**.
 
 ---
 
 ## 🚀 Quick Install (XIPivot)
 
-1. Download or clone this repository directly into your XIPivot `DATs` folder:
-   ```text
-   Windower4/addons/XIPivot/data/DATs/SmokeFreeDats/
-   ```
-2. In-game, run:
-   ```text
-   //pivot add SmokeFreeDats
-   ```
+1. Download or clone this repository.
+2. Place the `zones` and/or `objects` folders directly into your XIPivot `DATs` directory:
 
-To make it permanent across sessions, add `SmokeFreeDats` to `Windower4/addons/XIPivot/data/settings.xml`:
+```text
+Windower4/addons/XIPivot/data/DATs/
+├── zones/
+│   ├── ROM/1/...
+│   ├── ROM3/0/...
+│   └── ROM9/0/...
+└── objects/
+    ├── ROM/3/...
+    └── ROM/259/...
+```
+
+### Enable in XIPivot
+In your Windower console in-game, run:
+```text
+//pivot add zones
+//pivot add objects
+```
+
+To make them load automatically on every startup, add them to `Windower4/addons/XIPivot/data/settings.xml`:
 ```xml
-<overlays>SmokeFreeDats,XI-View</overlays>
+<overlays>zones,objects,XI-View</overlays>
 ```
 
 ---
 
-## 📋 Included Optimizations
+## 🌆 1. Zones Pack (`zones/`)
 
-### 🌆 1. Town & Port Chimney Smoke Removal (9 Hubs)
-*Cleanly excises chimney and boiler smoke containers without altering terrain, weather skyboxes, or collision.*
+*All town smoke and mist emitters are disabled natively at the engine level (using Aamace's 1-bit Auto-Run toggle). Every DAT is **100% byte-exact to retail with zero offset shifting**, making zone-in crashes impossible.*
 
-| City / Zone | DAT Path | What Was Removed |
-|---|---|---|
-| **Mhaura** | `ROM/1/44.DAT` | Harbor boiler steam, dock haze, all chimney smoke |
-| **Western Adoulin** | `ROM9/0/3.DAT` | Hearth smog, residential chimneys, bridge smog |
-| **Upper Jeuno** | `ROM/1/40.DAT` | Rooftop residential chimney smoke (35.8 KB) |
-| **Bastok Mines** | `ROM/1/30.DAT` | Industrial blast furnace smoke (21.2 KB) |
-| **Bastok Markets** | `ROM/1/31.DAT` | District-wide residential chimney smoke (44.3 KB) |
-| **Port Bastok** | `ROM/1/32.DAT` | Harbor boiler exhaust plumes & dock smoke (39.8 KB) |
-| **Windurst Woods** | `ROM/1/34.DAT` | Residential treehouse chimney smoke (43.4 KB) |
-| **Windurst Waters** | `ROM/1/35.DAT` | Tarutaru residential chimney smoke (44.7 KB) |
-| **Port Windurst** | `ROM/1/37.DAT` | Harbor dock boiler smoke (37.5 KB) |
+| City / Zone | Target DAT | Optimizations | Status |
+|---|---|---|---|
+| **Mhaura** | `ROM/1/44.DAT` | Harbor boiler steam & chimney smoke | ✅ 100% Retail Exact |
+| **Selbina** | `ROM/1/43.DAT` | 19 Residential & smokehouse chimneys | ✅ 100% Retail Exact |
+| **Western Adoulin** | `ROM9/0/3.DAT` | 27 Hearth smog & chimney plumes | ✅ 100% Retail Exact |
+| **Upper Jeuno** | `ROM/1/40.DAT` | 15 Rooftop chimney smoke plumes | ✅ 100% Retail Exact |
+| **Bastok Mines** | `ROM/1/30.DAT` | Industrial blast furnace smoke plumes | ✅ 100% Retail Exact |
+| **Bastok Markets** | `ROM/1/31.DAT` | 32 District-wide residential chimneys | ✅ 100% Retail Exact |
+| **Port Bastok** | `ROM/1/32.DAT` | 30 Harbor boiler exhaust plumes | ✅ 100% Retail Exact |
+| **Windurst Woods** | `ROM/1/34.DAT` | 35 Treehouse residential chimneys | ✅ 100% Retail Exact |
+| **Windurst Waters** | `ROM/1/35.DAT` | 34 Tarutaru residential chimneys | ✅ 100% Retail Exact |
+| **Port Windurst** | `ROM/1/37.DAT` | 24 Dock boiler smoke plumes | ✅ 100% Retail Exact |
+| **Nashmau** | `ROM3/0/3.DAT` | Canal water haze, steam & cooking smoke | ✅ 100% Retail Exact |
 
 ---
 
-### 🔮 2. Elemental Crystal Fetters & Halos (All 8 Elements)
-*Silences spinning particle halos on Crystal Fetters & Halos across **Sortie**, **Odyssey** (Agon Halos), **Dynamis-Divergence Wave 3**, **Lady Lilith**, and **Provenance Watcher**.*
+## 🔮 2. Objects Pack (`objects/`)
 
-| Element | DAT Path | What Was Silenced |
+*Silences heavy rotating alpha-transparent particle glows on interactive objects and battle summons.*
+
+### A. All 8 Elemental Crystal Fetters & Gyres
+*Silences spinning particle halos on Crystal Fetters & Gyres across **Sortie**, **Odyssey** (Agon Halos), **Dynamis-Divergence Wave 3**, **Lady Lilith**, and **Provenance Watcher**.*
+
+| Element | Target DAT | What Was Silenced |
 |---|---|---|
 | **Fire Fetter** | `ROM/259/73.DAT` | 3D Rotating elemental glow flare |
 | **Ice Fetter** | `ROM/259/74.DAT` | 3D Rotating elemental glow flare |
@@ -60,11 +76,9 @@ To make it permanent across sessions, add `SmokeFreeDats` to `Windower4/addons/X
 | **Light Fetter** | `ROM/259/79.DAT` | 3D Rotating elemental glow flare |
 | **Dark Fetter** | `ROM/259/80.DAT` | 3D Rotating elemental glow flare |
 
----
-
-### 💠 3. Home Point Crystals
+### B. Home Point Crystals
 *Silences the rotating crystal particle glow around all Home Points.*
 
-| Object | DAT Path | What Was Silenced |
+| Object | Target DAT | What Was Silenced |
 |---|---|---|
 | **Home Point Crystal** | `ROM/3/25.DAT` | Rotating crystal particle aura |
