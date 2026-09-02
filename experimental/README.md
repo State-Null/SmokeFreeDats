@@ -1,0 +1,1 @@
+# Experimental Pack\n\nBattlefield and outdoor zone performance optimizations.\n\n* atallia_s/ROM5/0/7.DAT: Batallia Downs [S] (32 smoke/fire emitters silenced)\n

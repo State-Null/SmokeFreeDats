@@ -1,0 +1,1 @@
+# Objects Pack\n\nParticle glow removal for Elemental Crystal Fetters and Home Points.\n
