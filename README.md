@@ -6,7 +6,7 @@ A modular, zero-lag performance DAT collection for Final Fantasy XI via **[XIPiv
 
 ## 📦 Packs
 
-1. 🌆 **zones/**: Town & port smoke and mist removal across **12 major cities, hubs and Mog Garden**.
+1. 🌆 **zones/**: Town & port smoke and mist removal across **11 major cities and hubs**.
 2. 🔮 **objects/**: Particle glow removal for **Elemental Crystal Fetters & Gyres** and **Home Points**.
 3. 🧪 **experimental/**: Large-scale outdoor battlefield emitter optimizations.
 
@@ -49,7 +49,6 @@ Enable in XIPivot:
 | **Windurst Waters** | ROM/1/35.DAT | 34 Tarutaru residential chimneys |
 | **Port Windurst** | ROM/1/37.DAT | 24 Dock boiler smoke plumes |
 | **Nashmau** | ROM3/0/3.DAT | Canal water haze, steam & cooking smoke |
-| **Mog Garden** | ROM/309/10.DAT | 125 Continuous particle, lantern glow & insect emitters |
 
 ---
 
