@@ -66,3 +66,4 @@ Enable in XIPivot:
 | Zone | Target DAT | Optimizations |
 |---|---|---|
 | **Batallia Downs [S]** | ROM5/0/7.DAT | 32 Battlefield campfire, smoke plume & beacon emitters |
+| **Mog Garden** | ROM/309/10.DAT | Alpha overdraw elimination (grass, wave foam, caustics, lantern halos) |

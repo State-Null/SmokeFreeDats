@@ -1,0 +1,1 @@
+# Mog Garden Performance Optimization (Zone 280)\n\n* ROM/309/10.DAT: Alpha overdraw elimination across grass billboards, beach foam, water caustics, and lantern halos.\n
