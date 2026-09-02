@@ -36,19 +36,19 @@ Enable in XIPivot:
 
 ## 🌆 1. Zones Pack (zones/)
 
-| City / Zone | Target DAT | Optimizations | Status |
-|---|---|---|---|
-| **Mhaura** | ROM/1/44.DAT | Harbor boiler steam & chimney smoke | ✅ 100% Retail Exact |
-| **Selbina** | ROM/1/43.DAT | 19 Residential & smokehouse chimneys | ✅ 100% Retail Exact |
-| **Western Adoulin** | ROM9/0/3.DAT | 27 Hearth smog & chimney plumes | ✅ 100% Retail Exact |
-| **Upper Jeuno** | ROM/1/40.DAT | 15 Rooftop chimney smoke plumes | ✅ 100% Retail Exact |
-| **Bastok Mines** | ROM/1/30.DAT | Industrial blast furnace smoke plumes | ✅ 100% Retail Exact |
-| **Bastok Markets** | ROM/1/31.DAT | 32 District-wide residential chimneys | ✅ 100% Retail Exact |
-| **Port Bastok** | ROM/1/32.DAT | 30 Harbor boiler exhaust plumes | ✅ 100% Retail Exact |
-| **Windurst Woods** | ROM/1/34.DAT | 35 Treehouse residential chimneys | ✅ 100% Retail Exact |
-| **Windurst Waters** | ROM/1/35.DAT | 34 Tarutaru residential chimneys | ✅ 100% Retail Exact |
-| **Port Windurst** | ROM/1/37.DAT | 24 Dock boiler smoke plumes | ✅ 100% Retail Exact |
-| **Nashmau** | ROM3/0/3.DAT | Canal water haze, steam & cooking smoke | ✅ 100% Retail Exact |
+| City / Zone | Target DAT | Optimizations |
+|---|---|---|
+| **Mhaura** | ROM/1/44.DAT | Harbor boiler steam & chimney smoke |
+| **Selbina** | ROM/1/43.DAT | 19 Residential & smokehouse chimneys |
+| **Western Adoulin** | ROM9/0/3.DAT | 27 Hearth smog & chimney plumes |
+| **Upper Jeuno** | ROM/1/40.DAT | 15 Rooftop chimney smoke plumes |
+| **Bastok Mines** | ROM/1/30.DAT | Industrial blast furnace smoke plumes |
+| **Bastok Markets** | ROM/1/31.DAT | 32 District-wide residential chimneys |
+| **Port Bastok** | ROM/1/32.DAT | 30 Harbor boiler exhaust plumes |
+| **Windurst Woods** | ROM/1/34.DAT | 35 Treehouse residential chimneys |
+| **Windurst Waters** | ROM/1/35.DAT | 34 Tarutaru residential chimneys |
+| **Port Windurst** | ROM/1/37.DAT | 24 Dock boiler smoke plumes |
+| **Nashmau** | ROM3/0/3.DAT | Canal water haze, steam & cooking smoke |
 
 ---
 
@@ -63,6 +63,6 @@ Enable in XIPivot:
 
 ## 🧪 3. Experimental Pack (experimental/)
 
-| Zone | Target DAT | Optimizations | Status |
-|---|---|---|---|
-| **Batallia Downs [S]** | ROM5/0/7.DAT | 32 Battlefield campfire, smoke plume & beacon emitters | ✅ 100% Retail Exact |
+| Zone | Target DAT | Optimizations |
+|---|---|---|
+| **Batallia Downs [S]** | ROM5/0/7.DAT | 32 Battlefield campfire, smoke plume & beacon emitters |
