@@ -3,7 +3,7 @@
 A modular, zero-lag performance DAT collection for Final Fantasy XI via **[XIPivot](https://github.com/Darkdoom/XIPivot)**.
 
 This repository is organized into two independent packs:
-1. 🌆 **`zones`**: Town & port smoke and mist removal across **11 major cities and hubs** using native engine Auto-Run emitter toggles.
+1. 🌆 **`zones`**: Town & port smoke and mist removal across **12 major zones, cities and battlefields** using native engine Auto-Run emitter toggles.
 2. 🔮 **`objects`**: Particle glow removal for all **8 Elemental Crystal Fetters & Gyres** and **Home Point Crystals**.
 
 ---
